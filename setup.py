@@ -8,6 +8,7 @@ import os
 
 from setuptools import setup
 from setuptools.command.install import install
+from setuptools.command.sdist import sdist
 
 try:
     from urllib import urlretrieve
@@ -19,8 +20,8 @@ __VERSION__ = "0.1.5"
 
 _JAVA_LIB_URLS = [
     "https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.11.4/scala-library-2.11.4.jar",
-    "https://repo1.maven.org/maven2/org/apache/thrift/libthrift/0.9.2/libthrift-0.9.2.jar",
-    "https://repo1.maven.org/maven2/org/yaml/snakeyaml/1.14/snakeyaml-1.14.jar",
+    "https://repo1.maven.org/maven2/org/apache/thrift/libthrift/0.14.1/libthrift-0.14.1.jar",
+    "https://repo1.maven.org/maven2/org/yaml/snakeyaml/1.28/snakeyaml-1.28.jar",
     "https://repo1.maven.org/maven2/com/twitter/twitter-text/1.10.2/twitter-text-1.10.2.jar",
     "https://repo1.maven.org/maven2/com/twitter/penguin/korean-text/2.3.3/korean-text-2.3.3.jar",
 ]
@@ -89,5 +90,6 @@ setup(
     description="Python interface to twitter-korean-text, a Korean morphological analyzer.",
     cmdclass={
         'install': InstallCommand,
+        'sdist':   sdist
     }
 )
