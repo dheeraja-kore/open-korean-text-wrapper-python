@@ -20,8 +20,8 @@ __VERSION__ = "0.1.5"
 
 _JAVA_LIB_URLS = [
     "https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.11.4/scala-library-2.11.4.jar",
-    "https://repo1.maven.org/maven2/org/apache/thrift/libthrift/0.15.0/libthrift-0.15.0.jar",
-    "https://repo1.maven.org/maven2/org/yaml/snakeyaml/1.29/snakeyaml-1.29.jar",
+    "https://repo1.maven.org/maven2/org/apache/thrift/libthrift/0.16.0/libthrift-0.16.0.jar",
+    "https://repo1.maven.org/maven2/org/yaml/snakeyaml/1.32/snakeyaml-1.32.jar",
     "https://repo1.maven.org/maven2/com/twitter/twitter-text/1.10.2/twitter-text-1.10.2.jar",
     "https://repo1.maven.org/maven2/com/twitter/penguin/korean-text/2.3.3/korean-text-2.3.3.jar",
 ]
